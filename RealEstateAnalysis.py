@@ -61,7 +61,7 @@ pd.set_option('display.max_columns', 42)
 pd.set_option('display.max_rows', 30)
 # get_ipython().run_line_magic('matplotlib', 'inline')
 
-df = df.dropna() 
+#df = df.dropna() 
 
 df = pd.read_excel("Corelogic.xlsx")
 pd.options.display.float_format = '{:,.2f}'.format
