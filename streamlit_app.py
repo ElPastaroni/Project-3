@@ -13,7 +13,7 @@ def load_data(file_path):
     df = pd.read_excel("CoreLogic.xlsx")
     return df
 
-df = df.rename(columns={'Teritorial Authority': 'Region', 'Average Price Value': 'Average current price'})
+df = df.rename(columns={'Teritorial authority': 'Region', 'Average current value': 'Average current price'})
 
 def plot_average_price(df):
     plt.figure(figsize=(25, 16))
