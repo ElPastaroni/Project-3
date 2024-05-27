@@ -87,7 +87,7 @@ from matplotlib.ticker import StrMethodFormatter
 
 pd.set_option('display.max_columns', 42)
 pd.set_option('display.max_rows', 30)
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 df = pd.read_excel(r"Corelogic.xlsx")
 pd.options.display.float_format = '{:,.2f}'.format
