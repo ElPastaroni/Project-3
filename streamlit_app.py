@@ -15,7 +15,7 @@ def load_data(file_path):
 
 def plot_average_price(df):
     plt.figure(figsize=(25, 16))
-    plt.bar(df['Teritorial authority'], df['Average current value'], color='lightblue')
+    plt.bar(df['Territorial authority'], df['Average current value'], color='lightblue')
     plt.xlabel('Region')
     plt.ylabel('Average Current Price')
     plt.title('Average House Price per Region')
