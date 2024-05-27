@@ -10,10 +10,8 @@ from matplotlib.ticker import StrMethodFormatter
 
 @st.cache
 def load_data(file_path):
-    df = pd.read_excel("CoreLogic.xlsx")
+    df = pd.read_excel("CoreLogic(1).xlsx")
     return df
-
-df = df.rename(columns={'Teritorial authority': 'Region', 'Average current value': 'Average current price'})
 
 def plot_average_price(df):
     plt.figure(figsize=(25, 16))
@@ -39,7 +37,7 @@ def plot_price_distribution(df):
 def main():
     st.title('Real Estate Insight Dashboard')
 
-    file_path = "CoreLogic.xlsx"
+    file_path = "CoreLogic(1).xlsx"
     df = load_data(file_path)
 
     option = st.sidebar.selectbox(
