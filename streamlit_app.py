@@ -83,39 +83,6 @@ plt.tight_layout(rect=[0, 0, 1, 0.94])
 plt.gca().yaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
 st.pyplot(fig)
 
-# Prepare the data for machine learning
-st.subheader('Predicting House Prices with Linear Regression')
-
-X = df[['3 month change%', '12 month change%']]  # Features
-y = df['Average current price']  # Target variable
-
-# Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Train a linear regression model
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-# Predict prices
-y_pred = model.predict(X_test)
-
-# Evaluate the model
-mse = mean_squared_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
-
-# Display evaluation metrics
-st.write(f"### Mean Squared Error: {mse:.2f}")
-st.write(f"### R-squared: {r2:.2f}")
-
-# Plot true vs predicted prices
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.scatter(y_test, y_pred, alpha=0.7, edgecolors='b', s=100)
-ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=4)
-ax.set_xlabel('True Prices')
-ax.set_ylabel('Predicted Prices')
-ax.set_title('True vs Predicted Prices')
-st.pyplot(fig)
-
 # Additional data analysis
 st.subheader('Additional Data Analysis')
 
