@@ -37,7 +37,7 @@ def main():
     st.title('Real Estate Insight Dashboard')
 
     # Load the data
-    file_path = "C:\Users\OEM\Documents\Corelogic_NZ_HousePriceIndex_Residentialpricemovement_APR2024__1_.xlsx"
+    file_path = "Corelogic.xlsx"
     df = load_data(file_path)
 
     # Sidebar selection
