@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 # Load the datasets
 @st.cache_data
 def load_data(file_path):
-    df = pd.read_excel(CoreLogic.xlsx)
+    df = pd.read_excel('CoreLogic.xlsx')
     df.rename(columns={'Territorial authority': 'Region', 'Average current value': 'Average current price', '3 month change %': '3 month change%'}, inplace=True)
     df['Average value 3 months ago'] = df['Average current price'] / (1 + df['3 month change%'])
     df['Average value 12 months ago'] = df['Average current price'] / (1 + df['12 month change%'])
@@ -22,7 +22,7 @@ def load_data(file_path):
 
 @st.cache_data
 def load_data2(file_path):
-    return pd.read_excel(NZrealestate.xlsx)
+    return pd.read_excel('NZrealestate.xlsx')
 
 file_path = "CoreLogic.xlsx"
 df = load_data(file_path)
