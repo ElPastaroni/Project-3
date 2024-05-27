@@ -72,7 +72,7 @@ df.rename(columns = {'3 month change %':'3 month change%'}, inplace = True)
 df['Average value 3 months ago'] = df['Average current price'] / (1 + df['3 month change%'])
 df['Average value 12 months ago'] = df['Average current price'] / (1 + df['12 month change%'])
 
-display(df)
+#display(df)
 
 
 # #### Bar plot of average current price per region
