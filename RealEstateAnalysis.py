@@ -63,7 +63,7 @@ pd.set_option('display.max_rows', 30)
 
 #df = df.dropna() 
 
-df = pd.read_excel("Corelogic.xlsx")
+df = pd.read_excel("CoreLogic.xlsx")
 pd.options.display.float_format = '{:,.2f}'.format
 df.rename(columns = {'Territorial authority':'Region'}, inplace = True)
 df.rename(columns = {'Average current value':'Average current price'}, inplace = True)
