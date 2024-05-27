@@ -148,7 +148,7 @@ from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
-df= df.dropna() 
+#df= df.dropna() 
 X = X.reindex(y.index)
 
 x = df[['3 month change%', '12 month change%']]  
