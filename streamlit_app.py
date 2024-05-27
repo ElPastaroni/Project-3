@@ -6,11 +6,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.ticker import StrMethodFormatter
-
+from Project 3-Group 9(1) import df
 # Load the dataset
 @st.cache
 def load_data(file_path):
-    df = pd.read_excel(file_path)
+    df = pd.read_excel("CoreLogic.xlsx")
     return df
 
 # Function to plot average house price per region
@@ -39,7 +39,7 @@ def main():
     st.title('Real Estate Insight Dashboard')
 
     # Load the data
-    file_path = "Corelogic.xlsx"
+    file_path = "CoreLogic.xlsx"
     df = load_data(file_path)
 
     # Sidebar selection
