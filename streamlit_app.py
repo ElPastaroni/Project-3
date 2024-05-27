@@ -10,7 +10,7 @@ from matplotlib.ticker import StrMethodFormatter
 # Load the dataset
 @st.cache
 def load_data(file_path):
-    df = pd.read_excel("Corelogic.xlsx")
+    df = pd.read_excel("CoreLogic.xlsx")
     return df
 
 # Function to plot average house price per region
@@ -39,7 +39,7 @@ def main():
     st.title('Real Estate Insight Dashboard')
 
     # Load the data
-    file_path = "Corelogic.xlsx"
+    file_path = "CoreLogic.xlsx"
     df = load_data(file_path)
 
     # Sidebar selection
