@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.ticker import StrMethodFormatter
-
+from Project 3-Group 9(1) import df
 # Load the dataset
 @st.cache
 def load_data(file_path):
