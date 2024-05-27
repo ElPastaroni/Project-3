@@ -1,4 +1,4 @@
-pip install --upgrade matplotlib
+
 
 import streamlit as st
 import pandas as pd
@@ -9,8 +9,8 @@ from matplotlib.ticker import StrMethodFormatter
 
 # Load the dataset
 @st.cache
-def load_data(file_path):
-    df = pd.read_excel(file_path)
+def load_data(Project 3- Group 9(1).ipynb):
+    df = pd.read_excel(Project 3- Group 9(1).ipynb)
     return df
 
 # Function to plot average house price per region
