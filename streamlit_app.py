@@ -14,6 +14,7 @@ def load_data(file_path):
     return df
 
 df = df.rename(columns={'Teritorial Authority': 'Region', 'Average Price Value': 'Average current price'})
+
 def plot_average_price(df):
     plt.figure(figsize=(25, 16))
     plt.bar(df['Region'], df['Average current price'], color='lightblue')
