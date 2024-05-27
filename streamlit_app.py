@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 # Load the datasets
 @st.cache_data
 def load_data(file_path):
-    df = pd.read_excel(file_path)
+    df = pd.read_excel(CodeLogic.xlsx)
     df.rename(columns={'Territorial authority': 'Region', 'Average current value': 'Average current price', '3 month change %': '3 month change%'}, inplace=True)
     df['Average value 3 months ago'] = df['Average current price'] / (1 + df['3 month change%'])
     df['Average value 12 months ago'] = df['Average current price'] / (1 + df['12 month change%'])
@@ -22,12 +22,12 @@ def load_data(file_path):
 
 @st.cache_data
 def load_data2(file_path):
-    return pd.read_excel(file_path)
+    return pd.read_excel(NZrealestate.xlsx)
 
-file_path = "C:/Users/OEM/Documents/Corelogic_NZ_HousePriceIndex_Residentialpricemovement_APR2024__1_.xlsx"
+file_path = "CoreLogic.xlsx"
 df = load_data(file_path)
 
-file_path2 = "C:/Users/bjmul/OneDrive/Desktop/DatasetsAss3/nz_real_estate.xlsx"
+file_path2 = "NZrealestate.xlsx"
 df2 = load_data2(file_path2)
 
 # Display DataFrame
@@ -164,8 +164,4 @@ while x < len(df3):
     x += 1
 
 fig, ax = plt.subplots()
-ax.scatter(df3.land_sizem2, df3.price, s=50)
-ax.set_xlabel("Land size (m2)")
-ax.set_ylabel("Price ($NZD)")
-ax.set_title("House Price vs. Land Size")
-st.pyplot(fig)
+ax.scatter(df3.land_sizem2, df3
