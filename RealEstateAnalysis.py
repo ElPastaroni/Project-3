@@ -59,7 +59,7 @@ import matplotlib.pyplot as plt
 
 pd.set_option('display.max_columns', 42)
 pd.set_option('display.max_rows', 30)
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 df.dropna(inplace=True) 
 
