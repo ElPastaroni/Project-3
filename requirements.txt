@@ -7,5 +7,5 @@ seaborn
 babel
 openpyxl
 scikit-learn 
-matplotlib.ticker 
+
 
