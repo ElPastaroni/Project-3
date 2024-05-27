@@ -61,7 +61,7 @@ pd.set_option('display.max_columns', 42)
 pd.set_option('display.max_rows', 30)
 # get_ipython().run_line_magic('matplotlib', 'inline')
 
-df.dropna(inplace=True) 
+df = df.dropna() 
 
 df = pd.read_excel("Corelogic.xlsx")
 pd.options.display.float_format = '{:,.2f}'.format
@@ -148,7 +148,7 @@ from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
-df.dropna(inplace=True) 
+df= df.dropna() 
 X = X.reindex(y.index)
 
 x = df[['3 month change%', '12 month change%']]  
