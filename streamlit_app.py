@@ -9,8 +9,8 @@ from matplotlib.ticker import StrMethodFormatter
 
 # Load the dataset
 @st.cache
-def load_data(file_path):
-    df = pd.read_excel(file_path)
+def load_data(Corelogic.xlsx):
+    df = pd.read_excel(Corelogic.xlsx)
     return df
 
 # Function to plot average house price per region
