@@ -6,3 +6,8 @@ plotly
 seaborn
 babel
 openpyxl
+sklearn.model_selection 
+sklearn.linear_model 
+sklearn.metrics 
+matplotlib.ticker 
+
