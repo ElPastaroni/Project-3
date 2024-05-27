@@ -164,4 +164,4 @@ while x < len(df3):
     x += 1
 
 fig, ax = plt.subplots()
-ax.scatter(df3.land_sizem2, df3
+ax.scatter(df3.land_sizem2, df3)
